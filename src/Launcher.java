@@ -13,8 +13,8 @@ public class Launcher {
     }
     public static int f_fibo(){
         System.out.println("Please enter a number from 0 to infinity");
-        int number = input.nextInt();
-        input.nextLine();
+        String s_number = input.nextLine();
+        int number = Integer.parseInt(s_number);
         int result = fibo_rec(number);
         System.out.println(result);
         return 0;
